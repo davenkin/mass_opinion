@@ -1,6 +1,22 @@
 install mysql or mysql2:
 gem install mysql2 -- --with-mysql-dir=/usr/local/mysql --with-mysql-lib=/usr/local/mysql/lib --with-mysql-include=/usr/local/mysql/include --with-mysql-config=/usr/local/mysql/bin/mysql_config
 
+reset database:
+rake db:drop
+rake db:create
+rake db:migrate
+
+switch environment:
+export RAILS_ENV=development/test/production
+
+use different environments for server:
+rails server -e development/test/production
+add -p 3001 to change the port from default 3000 to 3001
+
+By default, the development environment is without all cache and activate the auto-reloading. The production environment is with all cache.
+
+To load fixtures from test/fixtures/*.yml, you use rake db:fixtures:load. This loads the fixtures into your current environment (can be set via RAILS_ENV shell var or in config/environment.rb)
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create

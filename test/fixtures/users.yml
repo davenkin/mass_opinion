@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+davenkin:
+  name: davenkin
+  password: davenkin
+  email: davenkin@163.com
+  register_date: <%= Time.now %>
+
+kayla:
+  name: kayla
+  password: kayla
+  email: kayla@gmail.com
+  register_date: <%= Time.now %>
+# column: value
+#
+#  column: value
