@@ -17,6 +17,7 @@ By default, the development environment is without all cache and activate the au
 
 To load fixtures from test/fixtures/*.yml, you use rake db:fixtures:load. This loads the fixtures into your current environment (can be set via RAILS_ENV shell var or in config/environment.rb)
 
+run migration for a specific environment: rake db:migrate RAILS_ENV=development/test/production
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
