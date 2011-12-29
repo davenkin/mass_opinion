@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111223141604) do
+ActiveRecord::Schema.define(:version => 20111229142841) do
 
   create_table "categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -20,14 +20,22 @@ ActiveRecord::Schema.define(:version => 20111223141604) do
   end
 
   create_table "categories_questionnaires", :id => false, :force => true do |t|
-    t.integer "category_id"
-    t.integer "questionnaire_id"
+    t.integer "category_id",      :null => false
+    t.integer "questionnaire_id", :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.text     "content",          :null => false
+    t.date     "created_date",     :null => false
+    t.integer  "questionnaire_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "options", :force => true do |t|
-    t.string   "name",                            :null => false
-    t.integer  "vote_count",       :default => 0
-    t.integer  "questionnaire_id"
+    t.string   "name",                       :null => false
+    t.integer  "vote_count",  :default => 0
+    t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,6 +44,13 @@ ActiveRecord::Schema.define(:version => 20111223141604) do
     t.string   "name",         :null => false
     t.date     "created_date", :null => false
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.string   "name",             :null => false
+    t.integer  "questionnaire_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

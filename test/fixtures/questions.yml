@@ -4,13 +4,11 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-programming:
-  name: Programming
-  questionnaires: computer_questionnaire
 
-book:
-  name: Book
-  questionnaires: book_questionnaire
-# column: value
-#
-#  column: value
+programming_question:
+  name: Which programming language are currently using?
+  questionnaire: computer_questionnaire
+
+book_question:
+  name: Which book have you ever being reading?
+  questionnaire: book_questionnaire

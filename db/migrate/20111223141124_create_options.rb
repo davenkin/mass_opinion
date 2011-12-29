@@ -3,7 +3,7 @@ class CreateOptions < ActiveRecord::Migration
     create_table :options do |t|
       t.string :name, :null =>false
       t.integer :vote_count, :default => 0
-      t.references :questionnaire
+      t.references :question
       t.timestamps
     end
   end

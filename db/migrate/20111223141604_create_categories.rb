@@ -7,7 +7,7 @@ class CreateCategories < ActiveRecord::Migration
 
     create_table :categories_questionnaires, :id => false do |t|
       t.integer :category_id, :null => false
-      t.integer :questionnaire_id, null => false
+      t.integer :questionnaire_id, :null => false
     end
   end
 

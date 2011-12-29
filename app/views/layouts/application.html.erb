@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MassOpinion</title>
-  <%= stylesheet_link_tag    "application" %>
+  <title>Opinions!--Express your opinions here!</title>
+  <meta name="author" content="davenkin"/>
+  <meta name="keywords" content="opinion, survey, vote"/>
+  <meta name="description" content="Express your opinions here."/>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
- <p>this is the footer</p>
+<div class='content'>
+  <div class='header'>
+    <div class='h_right'>
+      Log In
+    </div>
+    <div class='h_left'>
+      <h1>Opinions!</h1>
+      <span class='sub'>--Your opinion matters here !</span>
+    </div>
+  </div>
+  <div class='main_content'>
+    <div class='cat_nav'>
+      <a class='category'>All</a>
+      <a class='category'>Programming</a>
+      <a class='category'>Books</a>
+      <a class='category'>Health</a>
+      <a class='category'>Education</a>
+      <a class='category'>Economics</a>
+      <a class='category'>Technology</a>
+      <a class='category'>History</a>
+      <a class='category'>Sports</a>
+      <a class='category'>Entertainment</a>
+    </div>
+    <%= yield %>
+  </div>
+  <div class='footer'></div>
+</div>
+
+
+
 </body>
 </html>

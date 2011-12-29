@@ -5,3 +5,122 @@
  *= require_self
  *= require_tree . 
 */
+
+body {
+	background: gray;
+	margin: 0px;
+}
+h1 {
+	display: inline;
+	font-size: 80px;
+	margin: 0;
+	padding: 0;
+}
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+.header {
+	height: 120px;
+	background: darkSlateGray;
+	border-radius: 10px 10px 10px 10px;
+}
+.h_left {
+	color: white;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.h_right {
+	float: right;
+	background: gray;
+	color: White;
+	margin: 10px 10px 0 10px;
+	padding: 5px;
+	border-radius: 4px;
+}
+.sub {
+	font-size: 20px;
+	color: GreenYellow;
+}
+.cat_nav {
+	clear: both;
+	font-size: 20px;
+	text-align: center;
+	color: White;
+	border-radius: 8px;
+	background: darkSlateGray;
+	padding: 10px;
+}
+.category {
+	padding: 10px;
+	text-decoration: none;
+}
+.main_content {
+	background: dimGray;
+	overflow: auto;
+	border-radius: 10px 10px 10px 10px;
+	margin-top: 5px;
+}
+.question {
+	background: darkRed;
+	margin: 20px;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: darkRed;
+}
+.q_name {
+	font-size: 25px;
+	color: White;
+	padding: 0px 10px 0px 10px;
+}
+.q_choices {
+	background: whiteSmoke;
+	font-size: 20px;
+	padding: 2px 2px 1px;
+	border-radius: 5px;
+}
+.c_index {
+	float: left;
+	background: darkSlateGray;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.c_elt {
+	float: left;
+	background: green;
+	width: 300px;
+	padding-left: 5px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.c_count {
+	float: right;
+	margin-right: 5px;
+}
+.c_vote {
+	float: right;
+	background: Green;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 3px;
+}
+.q_choice {
+	color: White;
+	margin: 3px 10px;
+	clear: both;
+	height: 25px;
+	font-size: 23px;
+}
+.q_footer {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+	color: White;
+}
+.footer {
+	height: 40px;
+	background: darkSlateGray;
+	margin-top: 5px;
+	border-radius: 8px;
+}

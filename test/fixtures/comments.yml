@@ -4,8 +4,22 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+comment1:
+  content: I really love Jane Eyre, I have read it more than 5 times.
+  created_date: <%= Time.now %>
+  questionnaire: book_questionnaire
+
+comment2:
+  content: I hate gone with the wind.
+  created_date: <%= Time.now %>
+  questionnaire: book_questionnaire
+
+comment3:
+  content: I have being using Ruby for only half a year.
+  created_date: <%= Time.now %>
+  questionnaire: computer_questionnaire
+
+comment4:
+  content: Have used all of these languages.
+  created_date: <%= Time.now %>
+  questionnaire: computer_questionnaire

@@ -4,14 +4,13 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-questionnaire1:
-  name: Do you like programming?
+computer_questionnaire:
+  name: Tell us about your programming career
   created_date: <%= Time.now %>
   user: davenkin
-# column: value
-#
-questionnaire2:
-  name: Which one do you prefer, Ruby or Python?
+
+
+book_questionnaire:
+  name: About books
   created_date: <%= Time.now %>
   user: kayla
-#  column: value
