@@ -35,7 +35,27 @@ book_option6:
   question: book_question
   vote_count: 5342
 
+book_option7:
+  name: 1-10
+  question: book_question1
+  vote_count: 5342
 
+
+book_option7:
+  name: 1-10
+  question: book_question1
+  vote_count: 5342
+
+book_option8:
+  name: 10-100
+  question: book_question1
+  vote_count: 45342
+
+
+book_option9:
+  name: 100+
+  question: book_question1
+  vote_count: 9342
 
 
 programming_option1:

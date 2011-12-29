@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @user = User.find(:first)
+    @questionnaire = Questionnaire.find(:first)
   end
 
 end

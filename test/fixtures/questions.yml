@@ -12,3 +12,7 @@ programming_question:
 book_question:
   name: Which book have you ever being reading?
   questionnaire: book_questionnaire
+
+book_question1:
+  name: About books have you read?
+  questionnaire: book_questionnaire

@@ -1,0 +1,10 @@
+<p>name:<%= @questionnaire.name %> </p>
+<p>creator:<%= @questionnaire.user.name %></p>
+<p>created at:<%= @questionnaire.created_at %> </p>
+<% @questionnaire.questions.each do |question| %>
+    <p>question name:<%= question.name %></p>
+    <p>question options:</p>
+    <% question.options.each do |option| %>
+        <p><span><%= option.name %></span><span>:<%= option.vote_count %></span></p>
+    <% end %>
+<% end %>
