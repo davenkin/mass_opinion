@@ -6,11 +6,11 @@
 #
 programming:
   name: Programming
-  questionnaires: computer_questionnaire
+  questions: programming_question
 
 book:
   name: Book
-  questionnaires: book_questionnaire
+  questions: book_question,book_question1
 # column: value
 #
 #  column: value

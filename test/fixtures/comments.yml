@@ -7,19 +7,19 @@
 comment1:
   content: I really love Jane Eyre, I have read it more than 5 times.
   created_date: <%= Time.now %>
-  questionnaire: book_questionnaire
+  question: book_question
 
 comment2:
   content: I hate gone with the wind.
   created_date: <%= Time.now %>
-  questionnaire: book_questionnaire
+  question: book_question
 
 comment3:
   content: I have being using Ruby for only half a year.
   created_date: <%= Time.now %>
-  questionnaire: computer_questionnaire
+  question: programming_question
 
 comment4:
   content: Have used all of these languages.
   created_date: <%= Time.now %>
-  questionnaire: computer_questionnaire
+  question: programming_question

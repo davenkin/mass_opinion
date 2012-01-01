@@ -5,14 +5,14 @@ class CreateCategories < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :categories_questionnaires, :id => false do |t|
+    create_table :categories_questions, :id => false do |t|
       t.integer :category_id, :null => false
-      t.integer :questionnaire_id, :null => false
+      t.integer :question_id, :null => false
     end
   end
 
   def down
     drop_table :categories
-    drop_table :categories_questionnaires
+    drop_table :categories_questions
   end
 end

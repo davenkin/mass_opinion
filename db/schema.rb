@@ -19,15 +19,15 @@ ActiveRecord::Schema.define(:version => 20111229142841) do
     t.datetime "updated_at"
   end
 
-  create_table "categories_questionnaires", :id => false, :force => true do |t|
-    t.integer "category_id",      :null => false
-    t.integer "questionnaire_id", :null => false
+  create_table "categories_questions", :id => false, :force => true do |t|
+    t.integer "category_id", :null => false
+    t.integer "question_id", :null => false
   end
 
   create_table "comments", :force => true do |t|
-    t.text     "content",          :null => false
-    t.date     "created_date",     :null => false
-    t.integer  "questionnaire_id"
+    t.text     "content",      :null => false
+    t.date     "created_date", :null => false
+    t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,17 +40,10 @@ ActiveRecord::Schema.define(:version => 20111229142841) do
     t.datetime "updated_at"
   end
 
-  create_table "questionnaires", :force => true do |t|
+  create_table "questions", :force => true do |t|
     t.string   "name",         :null => false
     t.date     "created_date", :null => false
     t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "questions", :force => true do |t|
-    t.string   "name",             :null => false
-    t.integer  "questionnaire_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

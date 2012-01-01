@@ -1,10 +1,18 @@
-<p>name:<%= @questionnaire.name %> </p>
-<p>creator:<%= @questionnaire.user.name %></p>
-<p>created at:<%= @questionnaire.created_at %> </p>
-<% @questionnaire.questions.each do |question| %>
-    <p>question name:<%= question.name %></p>
-    <p>question options:</p>
-    <% question.options.each do |option| %>
-        <p><span><%= option.name %></span><span>:<%= option.vote_count %></span></p>
-    <% end %>
+<% @questions.each do |question| %>
+    <div class="question">
+      <div class='q_name'><%= question.name %></div>
+      <div class='q_choices'>
+        <% index = 0 %>
+        <% question.options.each do |option| %>
+            <% index += 1 %>
+            <div class="q_choice">
+              <span class="c_index"><%= index %></span>
+              <em class="c_elt"><%= option.name %></em>
+              <button class="vote_button" id="<%= option.id %>" type='button'>vote</button>
+               <span class='c_count'><%= option.vote_count %></span>
+            </div>
+        <% end %>
+      </div>
+    </div>
+
 <% end %>
