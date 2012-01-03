@@ -5,12 +5,31 @@
 # below each fixture, per the syntax in the comments below
 #
 programming:
-  name: Programming
-  questions: programming_question
+  name: programming
+  questions: programming_question,book_question
 
 book:
-  name: Book
+  name: books
   questions: book_question,book_question1
+
+
+health:
+  name: health
+
+education:
+  name: education
+
+economics:
+  name: economics
+
+technology:
+  name: technology
+
+history:
+  name: history
+
+sports:
+  name: sports
 # column: value
 #
 #  column: value

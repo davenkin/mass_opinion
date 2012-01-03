@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("button.vote_button").click(function() {
         var vote_btn = $(this);
         $.ajax({
-            url: "/home/vote/",
+            url: "/questions/vote/",
             type:"POST",
             data: {id:vote_btn.attr('id')},
             dataType: "json",
