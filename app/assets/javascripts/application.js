@@ -18,14 +18,15 @@ $(document).ready(function() {
             data: {id:vote_btn.attr('id')},
             dataType: "json",
             success: function(data) {
-                vote_btn.parent().children('.c_count').text(data);
+                var num = vote_btn.parent().children('.c_count').text()
+                vote_btn.parent().children('.c_count').text(parseInt(num)+1);
                 var total = 0;
                 vote_btn.parents(".q_choices").children().each(function() {
                     total = total + parseInt($(this).children('.c_count').text())
                 });
-                var wh = data / total * 850
+                var width = data / total * 850
                 vote_btn.parent().children(".c_elt").animate({width:0}, "fast");
-                vote_btn.parent().children(".c_elt").animate({width:wh}, "slow");
+                vote_btn.parent().children(".c_elt").animate({width:width}, "slow");
             }
         });
     });
